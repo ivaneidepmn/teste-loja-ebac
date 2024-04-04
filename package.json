@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ivaneidepmn/teste-loja-ebac/issues"
   },
-  "homepage": "https://github.com/ivaneidepmn/teste-loja-ebac#readme"
+  "homepage": "https://github.com/ivaneidepmn/teste-loja-ebac#readme",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
 }
