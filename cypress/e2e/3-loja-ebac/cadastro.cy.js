@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 import { faker } from '@faker-js/faker';
 
-describe('Funcionalidade  Cadastro', () => {
+describe('Funcionalidade = Cadastro', () => {
     beforeEach(() => {
         cy.visit('minha-conta')
     });
@@ -19,12 +19,16 @@ describe('Funcionalidade  Cadastro', () => {
 
 
         });
-
-        it.only('Deve completar o cadastro com sucesso-usando variaveis', () => {
+        
+    it.only('Deve completar o cadastro com sucesso - usando comandos customizados', (email, senha, nome, sobrenome) => {
+        cy.preCadastro(faker.internet.email(), 'gr1234',faker.person.firstName(), faker.person.lastName() );
+        cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.');
+    
+});
+        it('Deve completar o cadastro com sucesso-usando variaveis', () => {
             var nome  = faker.person.firstName()
             var email = faker.internet.email(nome)
             var sobrenome = faker.person.lastName()
-
             cy.get('#reg_email').type(email)
             cy.get('#reg_password').type('gr1234')
             cy.get(':nth-child(4) > .button').click()
