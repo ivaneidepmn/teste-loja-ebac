@@ -20,14 +20,14 @@ describe('Funcionalidade = Cadastro', () => {
 
         });
         
-    it.only('Deve completar o cadastro com sucesso - usando comandos customizados', () => {
-    cy.preCadastro (faker.internet.email(), 'gr1234',faker.person.firstName(), faker.person.lastName() );
+    it('Deve completar o cadastro com sucesso - usando comandos customizados', () => {
+    cy.preCadastro(faker.internet.email(), 'gr1234', faker.person.firstName(), faker.person.lastName() );
     cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.'); 
 
 });
 
 
-        it('Deve completar o cadastro com sucesso-usando variaveis', () => {
+    it('Deve completar o cadastro com sucesso-usando variaveis', () => {
             var nome  = faker.person.firstName()
             var email = faker.internet.email(nome)
             var sobrenome = faker.person.lastName()
