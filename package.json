@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ivaneidepmn/teste-loja-ebac#readme",
   "dependencies": {
-    "@faker-js/faker": "^8.4.1"
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^13.8.1"
   }
 }
