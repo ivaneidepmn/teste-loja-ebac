@@ -1,6 +1,6 @@
 class ProdutosPage {
     visitarUrl() {
-        cy.visit('produtos');
+        cy.visit('Produtos');
     }
 
     buscarProduto(nomeProduto) {
@@ -17,12 +17,13 @@ class ProdutosPage {
         cy.visit(`produtos/${urlFormatada}`);
     }
 
-    addProdutoCarrinho(tamanho, cor, quantidade) {
-        cy.get('.button-variable-item-' + tamanho).click();
-        cy.get(`.button-variable-item-${cor}`).click();
-        cy.get('.input-text').clear().type(quantidade);
-        cy.get('.single_add_to_cart_button').click();
-    }
+    addProdutoCarrinho(tamanho, cor, qtd) {
+    cy.get('.button-variable-item-' + tamanho).click();
+    cy.get(`.button-variable-item-${cor}`).click();
+    cy.get('.input-text').clear().type(qtd);
+    cy.get('.single_add_to_cart_button').click();
 }
+          
+    }
 
 export default new ProdutosPage();

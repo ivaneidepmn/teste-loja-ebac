@@ -1,21 +1,34 @@
 [
-    {
-      "nomeProduto": "Abominable Hoodie",
-      "tamanho": "XS",
-      "cor": "Blue",
-      "quantidade": 4
-    },
+  {
+    "nomeProduto": "Abominable Hoodie",
+    "tamanho": "M",
+    "cor": "Green",
+    "quantidade": 6
+  },   
     {
        "nomeProduto": "Aero Daily Fitness Tee",
        "tamanho": "S",
-       "cor": "Blue",
+       "cor": "Black",
        "quantidade": 2
     },
     {
       "nomeProduto": "Aether Gym Pant",
-      "tamanho": "36",
+      "tamanho": "L",
       "cor": "Green",
       "quantidade": 7
-    }
+    },
+    {
+      "nomeProduto": "Augusta Pullover Jacket",
+      "tamanho": "36",
+      "cor": "Orange",
+      "quantidade": 3
+    },
+     {
+       "nomeProduto": "Apollo Running Short",
+       "tamanho": "34",
+       "cor": "Black",
+       "quantidade": 4
+     }
+
   ]
   
